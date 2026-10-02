@@ -1,0 +1,57 @@
+/* Localizable.strings — English (EN) */
+
+/* Tab bar */
+"sets_tab" = "Sets";
+"inventory_tab" = "Inventory";
+"add_card_tab" = "Add";
+
+/* SetListView */
+"sets_title" = "Pokémon Sets";
+"loading_sets" = "Loading sets…";
+"no_sets_title" = "No Sets Found";
+"no_sets_description" = "Pull to refresh or check your internet connection.";
+"search_sets_prompt" = "Search sets…";
+"all_series" = "All Series";
+"filter_label" = "Filter";
+
+/* CardGridView */
+"loading_cards" = "Loading cards…";
+"no_cards_title" = "No Cards Found";
+"no_cards_description" = "Cards for this set haven't been downloaded yet.";
+"search_cards_prompt" = "Search cards…";
+"show_owned_only" = "Show owned only";
+"mark_as_owned" = "Mark as Owned";
+"mark_as_missing" = "Mark as Missing";
+
+/* CardDetailView */
+"done_button" = "Done";
+"close_button" = "Close";
+"detail_set" = "Set";
+"detail_number" = "Number";
+"detail_series" = "Series";
+"detail_rarity" = "Rarity";
+"detail_copies" = "Copies";
+"prices_title" = "Cardmarket Prices";
+"loading_prices" = "Loading prices…";
+"no_prices_available" = "No current prices available.";
+"open_cardmarket" = "Open on Cardmarket";
+"holo_toggle" = "Holographic / Reverse Holo";
+
+/* Scanner */
+"scanner_title" = "Scan Card";
+"scanner_prompt_align" = "Align card within the frame";
+"advanced_scanner_title" = "Advanced Scanner";
+"filter_all" = "All";
+"filter_confident" = "Confident (≥80%)";
+"filter_uncertain" = "Uncertain (<80%)";
+"map_manually" = "Map manually";
+"add_to_collection" = "Add to collection";
+"all_to_collection" = "Add all to collection";
+"saved" = "Saved";
+
+/* Inventory */
+"inventory_title" = "Inventory";
+"portfolio_value" = "Total Value";
+"card_count" = "Cards";
+"avg_value" = "Avg Value";
+"updating_prices" = "Updating prices…";

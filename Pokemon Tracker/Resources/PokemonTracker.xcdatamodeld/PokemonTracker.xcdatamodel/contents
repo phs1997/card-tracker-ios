@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="PokemonSetEntity" representedClassName="PokemonSetEntity" syncable="YES" codeGenerationType="none">
+        <attribute name="id" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="lastSyncedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="series" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="symbolURL" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="totalCards" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PokemonCardEntity" inverseName="set" inverseEntity="PokemonCardEntity"/>
+    </entity>
+    <entity name="PokemonCardEntity" representedClassName="PokemonCardEntity" syncable="YES" codeGenerationType="none">
+        <attribute name="addedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="imageURLLarge" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="imageURLSmall" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="isHolo" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="number" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="owned" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="ownedCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <relationship name="prices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PriceEntry" inverseName="card" inverseEntity="PriceEntry"/>
+        <relationship name="set" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonSetEntity" inverseName="cards" inverseEntity="PokemonSetEntity"/>
+    </entity>
+    <entity name="PriceEntry" representedClassName="PriceEntry" syncable="YES" codeGenerationType="none">
+        <attribute name="cardId" attributeType="String" defaultValueString="" usesScalarValueType="NO"/>
+        <attribute name="condition" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="fetchedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="language" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="priceEUR" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonCardEntity" inverseName="prices" inverseEntity="PokemonCardEntity"/>
+    </entity>
+    <elements>
+        <element name="PokemonSetEntity" positionX="-63" positionY="-18" width="128" height="194"/>
+        <element name="PokemonCardEntity" positionX="189" positionY="-18" width="128" height="239"/>
+        <element name="PriceEntry" positionX="441" positionY="-18" width="128" height="179"/>
+    </elements>
+</model>

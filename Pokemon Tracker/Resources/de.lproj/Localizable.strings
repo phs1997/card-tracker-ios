@@ -1,0 +1,57 @@
+/* Localizable.strings — Deutsch (DE) */
+
+/* Tab-Leiste */
+"sets_tab" = "Sets";
+"inventory_tab" = "Inventar";
+"add_card_tab" = "Hinzufügen";
+
+/* SetListView */
+"sets_title" = "Pokémon-Sets";
+"loading_sets" = "Sets werden geladen…";
+"no_sets_title" = "Keine Sets gefunden";
+"no_sets_description" = "Zum Aktualisieren nach unten ziehen oder Internetverbindung prüfen.";
+"search_sets_prompt" = "Sets suchen…";
+"all_series" = "Alle Serien";
+"filter_label" = "Filter";
+
+/* CardGridView */
+"loading_cards" = "Karten werden geladen…";
+"no_cards_title" = "Keine Karten gefunden";
+"no_cards_description" = "Karten für dieses Set wurden noch nicht heruntergeladen.";
+"search_cards_prompt" = "Karten suchen…";
+"show_owned_only" = "Nur eigene anzeigen";
+"mark_as_owned" = "Als vorhanden markieren";
+"mark_as_missing" = "Als fehlend markieren";
+
+/* CardDetailView */
+"done_button" = "Fertig";
+"close_button" = "Schließen";
+"detail_set" = "Set";
+"detail_number" = "Nummer";
+"detail_series" = "Serie";
+"detail_rarity" = "Seltenheit";
+"detail_copies" = "Exemplare";
+"prices_title" = "Cardmarket Preise";
+"loading_prices" = "Preise werden geladen…";
+"no_prices_available" = "Keine aktuellen Preise verfügbar.";
+"open_cardmarket" = "Auf Cardmarket öffnen";
+"holo_toggle" = "Holografisch / Reverse Holo";
+
+/* Scanner */
+"scanner_title" = "Karte scannen";
+"scanner_prompt_align" = "Karte im Rahmen ausrichten";
+"advanced_scanner_title" = "Erweiterter Scanner";
+"filter_all" = "Alle";
+"filter_confident" = "Sicher (≥80%)";
+"filter_uncertain" = "Unsicher (<80%)";
+"map_manually" = "Manuell zuordnen";
+"add_to_collection" = "Zur Sammlung hinzufügen";
+"all_to_collection" = "Alle zur Sammlung hinzufügen";
+"saved" = "Gespeichert";
+
+/* Inventory */
+"inventory_title" = "Inventar";
+"portfolio_value" = "Gesamtwert";
+"card_count" = "Karten";
+"avg_value" = "Ø Wert";
+"updating_prices" = "Preise werden aktualisiert…";
